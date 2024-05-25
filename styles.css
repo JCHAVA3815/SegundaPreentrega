@@ -1,0 +1,411 @@
+/* página web version desktop*/
+
+*
+{
+    margin: 0;
+}
+
+header
+{
+    background-color: rgb(241, 226, 226);
+}
+
+header .logo
+{
+    padding: 25px 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(234, 60, 60);
+}
+
+/*--Se aplica Flexbox--*/
+header .navegador
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+header ul
+{
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    display: flex;
+    list-style: none;
+    text-align: center;
+    align-items: center;
+}
+
+header li{
+    padding: 10px 30px;
+}
+
+header a
+{
+    color: black;
+    text-decoration: none;
+}
+
+header a:hover
+{
+    color: blueviolet;
+}
+
+main .container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))
+    ,url(paisaje.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+main h2{
+    padding-top: 65px;
+    color: white;
+    font-family: sans-serif;
+    font-size: 70px;
+    font-weight: bold;
+    text-align: center;
+}
+
+main h3{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 30px;
+}
+main button
+{
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+main button:hover
+{
+    background-color: black;
+    color: white;
+}
+section h1
+{
+    background-color: rgb(236, 241, 246);
+    font-family: Arial;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    padding: 30px;
+}
+
+/* Se aplica el sistema de grillas*/
+.grid-layout
+{
+    background-color: aliceblue;
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    text-align: center;
+    justify-content: center;
+}
+
+.tarjeta
+{
+    border-radius: 15px;
+    padding: 40px;
+    text-align: center
+}
+
+.tarjeta h2
+{
+    text-align: center;
+}
+
+.tarjeta button
+{
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.tarjeta button:hover
+{
+    background-color: black;
+    color: white;
+}
+
+footer .copyright
+{
+    height: 50px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+}
+
+/*-- Página adicional con formulario de contacto --*/
+
+.formulario
+{
+    background-color: rgba(32, 29, 29, 0.89);
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formulario h1{
+    padding: 30px;
+    color: aliceblue;
+    font-family: sans-serif;
+    font-size: 30px;
+}
+
+.formulario input
+{
+    box-sizing: border-box;
+    border: 2px solid white;
+    font-family: "arial";
+    padding: 10px;
+}
+
+.mensaje
+{
+    height: 250px;
+    width: 315px;
+}
+
+button
+{
+    margin: 40px 60px;
+}
+
+/*-- Página secundaria con info de la empresa--*/
+
+.info
+{
+    padding: 30px;
+    box-sizing: border-box;
+    background-color: bisque;
+    height: 300px;
+    width: 100%;
+}
+
+.info span
+{
+    color: red;
+    font-family: "Tahoma";
+    font-weight: bold;
+    font-size: 60px;
+}
+
+.info p{
+    font-size: 30px;
+}
+
+.casa
+{
+    display: flex;
+}
+.casa img
+{
+    height: 300px;
+    width: 50%;
+}
+
+.dire
+{
+    background-color: bisque;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.dire p
+{
+    font-family: "impact";
+    font-size: 30px;
+    text-align: center;
+    margin: 60px 15px
+}
+/*-- Página secundaria con info de talleres--*/
+.clase
+{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))
+    ,url(taller.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+}
+
+.clase h1
+{
+    color: white;
+    font-family: "arial";
+    font-size: 80px;
+}
+
+.parrafo
+{
+    background-color: rgb(233, 233, 194);
+}
+
+.parrafo p
+{
+    font-family: "helvetica";
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px;
+    text-align: justify;
+}
+
+.video
+{
+    background-color: azure;
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+    justify-content: space-between;
+}
+
+.video2
+{
+    background-color: azure;
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+    justify-content: space-between;
+}
+
+/*versión movil*/
+@media (max-width: 480px)
+{
+    header
+    {
+        position: fixed;
+        width: 100%;
+    }
+
+    header .navegador
+    {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center center;
+    }
+
+    header ul{
+        height: 190px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center center;
+    }
+
+   main .container
+   {
+    height: 900px;
+   } 
+
+   main h2
+   {
+    
+   }
+
+    main h3
+    {
+        text-align: center;
+    }
+
+   .grid-layout
+   {
+    grid-template-columns: auto;
+   }
+
+   .tarjeta
+   {
+    height: 300px;
+    width: 300px;
+   }
+
+   /*página de info*/
+   
+   .info
+   {
+    height: 450px;
+   }
+
+   .casa
+   {
+    display: flex;
+    flex-direction: column;
+   }
+
+   .casa img
+   {
+    width: 100%;
+   }
+
+   /*--Página de los talleres--*/
+
+   .clase
+   {
+    position: fixed;
+    height: 150px;
+   }
+
+   .clase h1
+   {
+    font-size: 50px;
+   }
+
+   .parrafo
+   {
+    height: 450px;
+   }
+
+   .parrafo p
+   {
+    font-size: 22px;
+    padding-top: 170px;
+   }
+
+   .video
+   {
+    display: flex;
+    flex-direction: column;
+   }
+
+   .video iframe
+   {
+    height: 300px;
+    width: 290px;
+    margin-bottom: 20px;
+   }
+   
+   .video2
+   {
+    display: flex;
+    flex-direction: column;
+   }
+
+   .video2 iframe
+   {
+    height: 300px;
+    width: 290px;
+    margin-bottom: 20px;
+   }
+}
